@@ -1,0 +1,342 @@
+/*------------- Paleta de colores ----------------*/
+/*
+#230A59
+#3E38F2
+#0029FA
+*/
+/*letras
+#FF9F65
+*/
+/*#FF6D70*/
+
+body{
+	margin: 0;
+	padding: 20px;
+	padding-top: 100px;
+	background-color: #01087C;
+}
+/*<------------- section de header -------------->*/
+ol{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.header{
+	background-color: #230A59;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	height: 70px;
+	left: 0;
+	top: 0;
+	position: fixed;
+}
+.name{
+	color: white;
+	font-family: 'manjari';
+	margin-left: 15px;
+}
+.name h1{
+	margin: 0;
+}
+.menu{
+	height: inherit;/* hereda la altura
+	del padre en este caso de header */
+}
+.header ol{
+	display: flex;
+	height: inherit;
+}
+.header ol li{
+	height: inherit;
+	display: flex;
+	align-items: center;
+}
+.header a{
+	color: #FF9F65;
+	text-decoration: none;
+	align-items: center;
+	display: flex;
+	height: inherit;
+	padding: 0 10px;
+	font-family: 'manjari';
+}
+/*<------------- section de i_am -------------->*/
+.i_am{
+	background-color: #230A59;
+	color: white;
+	border: 1px solid #000;
+	border-radius: 10px;
+	margin-bottom: 15px;
+	padding: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.i_am h2{
+	font-family: 'manjari';
+}
+.i_am h2 span{
+	color: #FF9F65;
+}
+.i_am figure{
+	margin: 0;
+}
+.i_am figure img{
+	border-radius: 2px;
+}
+/*<------------- section de double -------------->*/
+.double{
+	margin-bottom: 15px;
+	font-family: 'manjari';
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	box-sizing: border-box;
+}
+.capacities{
+	background-color: #230A59;
+	color: white;
+	border: 1px solid #000;
+	border-radius: 10px;
+	padding: 10px;
+	margin: 5px;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	box-sizing: border-box;
+}
+.capacities figure{
+	margin: 0;
+}
+.capacities ul{
+	list-style: none;
+	margin: 10px;
+	padding: 0;
+}
+.capacities h2{
+	margin: 10px;
+	color: #FF9F65;
+}
+.skills{
+	background-color: #230A59;
+	color: white;
+	border: 1px solid #000;
+	border-radius: 10px;
+	padding: 10px;
+	margin: 5px;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	box-sizing: border-box;
+}
+.skills figure{
+	margin: 0;
+}
+.skills ul{
+	list-style: none;
+	margin: 10px;
+	padding: 0;
+}
+.skills h2{
+	margin: 10px;
+	color: #FF9F65;
+}
+/*<------------- section de eventos -------------->*/
+.event-list{
+	display: flex;
+}
+.event-list-title{
+	margin-left: 20px;
+	color: white;
+	font-family: 'manjari';
+}
+.event{
+	margin: 10px;
+	width: 480px;
+	/*flex-shrink: 0;*//*para que el tamaño del contenedor no cambie*/
+	border-radius: 10px;
+	overflow: hidden;/*elimina desbordamiento de un contenedor*/
+	background-color: #F4FBFF;
+}
+.event-imageContainer{
+	margin: 0;
+}
+.event img{
+	width: 480px;
+	height: 200px;
+	object-fit: cover;/*ajusta la imagen para que lusca bien*/
+}
+.event-detail{
+	margin: 20px 40px;
+	margin-top: -40px;
+	position: relative;/*queda por encima de cualquier otro componente*/
+	background-color: white;
+	padding: 20px;
+	text-align: center;
+}
+.event-url{
+	color: #056FFF;
+	border: 1px solid;/*el color de borde asimila el mismo del texto*/
+	border-radius: 5px;
+	padding: 5px 20px;
+	text-decoration: none;
+}
+/*<------------- section de cv -------------->*/
+#cv_contenido{
+	border: 1px solid #F26E50;
+	border-radius: 10px;
+	height: 1200px;
+	width: 100%;
+	background-image: url('img/cube.png');
+	background-size: 1000px 600px;
+	background-repeat: repeat-y;
+	box-sizing: border-box;
+	padding: 20px;
+}
+.hero{
+	/*height: 300px;*/
+	background-image: url('img/foto.png');
+	/*background-size: 300px 300px;"tamaño de imagen"*/
+	background-repeat: no-repeat;
+	background-position-x: right;
+	display: flex;
+	align-items: center;
+	/*border-top: 50px solid #6DD9BF;
+	border-right: 50px solid #6DD9BF;
+	border-left: 50px solid #6DD9BF;
+	border-bottom: 50px solid #6DD9BF;*/
+	/*color: #6DD9BF;*/
+	/*border-top-color: #6DD9BF;
+	border-top-width: 30px;
+	border-top-style: solid;*/
+	/*border: 1px solid #F2916D;
+	border-radius: 10px;*/
+	/*border-top-left-radius: 50px;*/
+	/*margin-left: 10px;
+	margin-right: 10px;*/
+}
+#cv_contenido section h2{
+	width: 400px;
+	height: 300px;
+	font-family: 'manjari';
+	margin: 0;
+}
+#cv_contenido section h3{
+	/*text-transform: uppercase; block mayus*/
+	border-bottom: 2px solid #000;
+	color: #000;
+	font-family: 'manjari';
+}
+#cv_contenido section h2 span{
+	color: #FF9F65;
+}
+/*<------------- section de edu -------------->*/
+#edu_contenido{
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border: 1px solid #000;
+	border-radius: 10px;
+	background-color: #230A59;
+	padding: 20px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	box-sizing: border-box;/*permite que el tamaño de modelo
+	de caja no cambie al modificar el pading o el border*/
+}
+#edu_contenido section h2{
+	/*text-transform: uppercase;*/
+	font-family: 'manjari';
+}
+#edu_contenido h2 span{
+	color: #FF9F65;
+}
+/*<------------- section de gutos -------------->*/
+#proyectos_contenido{
+	color: white;
+	font-family: 'manjari';
+}
+#gustos_contenido{
+	color: white;
+	border: 1px solid #F26E50;
+	border-radius: 10px;
+	background-color: #F26E50;
+	padding: 20px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+#gustos_contenido ul{
+	list-style: circle;
+}
+#gustos_contenido li{
+	font-family: 'manjari';
+}
+/*<------------- section de contacto -------------->*/
+#contacto{
+	color: white;
+	height: 150px;
+	border: 1px solid #000;
+	border-radius: 10px;
+	background-color: #230A59;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 15px;
+}
+.social{
+}
+.social-link{
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	background-size: 50px 50px;
+}
+.social-link.twitter{
+	background-image: url(img/Twitter_Bird.svg);
+}
+.social-link.facebook{
+	background-image: url(img/face.svg);
+}
+.social-link.github{
+	background-image: url(img/github.svg);
+}
+.social-link.instagram{
+	background-image: url(img/istagram.png);
+}
+/*<------------- section de footer -------------->*/
+.footer{
+	color: white;
+	background-color: #1B2127;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.footer img{
+	vertical-align: middle;
+}
+.footer a{
+	color: white;
+}
+/*<------------- section de Aptitudes -------------->*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
